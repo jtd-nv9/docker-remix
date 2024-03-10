@@ -1,0 +1,8 @@
+# Check other options https://prettier.io/docs/en/options
+{
+    printWidth: 100,
+    singleQuote: true,
+    quoteProps: "preserve",
+    jsxSingleQuote: true,
+    trailingComma: "es5",
+}

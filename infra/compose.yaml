@@ -1,0 +1,16 @@
+services:
+  app:
+    container_name: node
+    image: ${PROJECT_NAME}-node
+    build:
+      context: ./app
+    ports:
+      - 3000:3000
+      - 3001:3001
+    tty: true
+    working_dir: ${WORKING_DIR}
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ../src/${PROJECT_NAME}:${WORKING_DIR}
+    
